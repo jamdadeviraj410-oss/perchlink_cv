@@ -1,0 +1,67 @@
+# ==============================================================================
+# PerchLink CV — .gitignore
+# ==============================================================================
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model Weights and Large Checkpoints (Store externally / on releases)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.ncnn*
+yolo11n.pt
+yolo11s.pt
+
+# Training Runs and Bulky Experiment Artifacts
+# Note: Preserve range validation log for bench-testing reproducibility
+runs/*
+!runs/perchlink_range_estimates.csv
+
+# Dataset Images, Labels, Parquet Data, and Caches (Download from Hugging Face)
+dataset/images/
+dataset/labels/
+dataset/aerial_epri/
+dataset/hotosm/data/
+dataset/hotosm/coco/
+dataset/hotosm/artifacts/
+dataset/hotosm/.cache/
+dataset/hotosm/metadata.parquet
+*.parquet
+*.cache
+dataset/tmp/
+
+# Video Test Assets (>300 MB)
+test_media/videos/
+
+# Local Backups and Legacy Archives
+backups/
+archive/
+
+# Logs and System Files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Workspace Configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & Credentials
+.env
+.env.*
+secrets.yaml

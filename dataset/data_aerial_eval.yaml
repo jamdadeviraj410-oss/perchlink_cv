@@ -1,0 +1,8 @@
+path: .
+
+train: dataset/aerial_epri/images/train
+val: dataset/aerial_epri/images/val
+test: dataset/aerial_epri/images/val
+
+names:
+  0: pole

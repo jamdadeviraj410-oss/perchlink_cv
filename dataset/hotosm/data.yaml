@@ -1,0 +1,7 @@
+names:
+- pole
+- tower
+nc: 2
+test: /content/drive/MyDrive/ObjectDetection/YOLO_Dataset/images/test
+train: /content/drive/MyDrive/ObjectDetection/YOLO_Dataset/images/train
+val: /content/drive/MyDrive/ObjectDetection/YOLO_Dataset/images/val

@@ -1,0 +1,23 @@
+# PerchLink CV — Dependency Manifest
+# Tested on Python 3.14.2 (Windows 11 x64, RTX 3050 GPU) and planned for Raspberry Pi 5 (ARM64)
+
+# Core Computer Vision & Deep Learning
+ultralytics>=8.3.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# Dataset Processing & Auditing
+pandas>=2.0.0
+pyarrow>=14.0.0
+tqdm>=4.65.0
+pyyaml>=6.0.0
+
+# PyTorch Ecosystem
+# Hardware-specific installation instructions:
+#   - Workstation / CUDA 12.8 (GPU):
+#       pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#   - CPU / Raspberry Pi 5 (ARM64 Edge Deployment):
+#       pip install torch torchvision
+torch>=2.2.0
+torchvision>=0.17.0
